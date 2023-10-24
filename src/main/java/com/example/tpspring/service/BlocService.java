@@ -2,9 +2,12 @@ package com.example.tpspring.service;
 
 import com.example.tpspring.entity.Bloc;
 import com.example.tpspring.repository.BlocRepository;
+import lombok.AllArgsConstructor;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
+@AllArgsConstructor
 public class BlocService implements IBlocService{
     BlocRepository blocRepository;
     @Override
