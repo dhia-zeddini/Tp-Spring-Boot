@@ -8,9 +8,9 @@ import java.util.List;
 
 @Repository
 public interface UniversiteRepository extends JpaRepository<Universite,Long> {
-    Universite findByNomUniversite(String nomU);
+   /* Universite findByNomUniversite(String nomU);
     long count();
     Universite addUniversite(Universite c);
     Universite modifyUniversite(Universite c);
-    void removeUniversite(Long universiteId);
+    void removeUniversite(Long universiteId);*/
 }

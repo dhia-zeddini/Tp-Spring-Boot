@@ -12,7 +12,7 @@ public interface ChambreRepository extends JpaRepository<Chambre,Long> {
 
     List<Chambre> findAllByNumeroChambreIsNull();
     Chambre findChambreByNumeroChambre(long numC);
-    List<Chambre> findAllByTypeChambre(TypeChamber type);
+    //List<Chambre> findAllByTypeChambre(TypeChamber type);
     long count();
 
 
