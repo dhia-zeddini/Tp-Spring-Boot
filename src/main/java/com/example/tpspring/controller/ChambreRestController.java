@@ -2,17 +2,21 @@ package com.example.tpspring.controller;
 
 import com.example.tpspring.entity.Chambre;
 import com.example.tpspring.service.IChambreService;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@Tag(name="Gestion chambre")
 @RestController
 @AllArgsConstructor
 @RequestMapping("/chambre")
 public class ChambreRestController {
     IChambreService chambreService;
 
+    @Operation(description = "recuperer toutes les chambre")
     @GetMapping("/retrive-all-chambres")
     public List<Chambre> getChambres(){
         List<Chambre> listChambres = chambreService.retrieveAllChambres();

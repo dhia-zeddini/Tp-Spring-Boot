@@ -1,4 +1,5 @@
 package com.example.tpspring.entity;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
 import lombok.*;
@@ -22,6 +23,7 @@ public class Bloc {
     @OneToMany(cascade = CascadeType.ALL,mappedBy = "bloc")
     private Set<Chambre> chambres;
 
+    @JsonIgnore
     @ManyToOne
     private Foyer foyer;
 }

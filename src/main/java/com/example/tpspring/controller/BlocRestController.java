@@ -3,10 +3,12 @@ package com.example.tpspring.controller;
 import com.example.tpspring.entity.Bloc;
 import com.example.tpspring.entity.Chambre;
 import com.example.tpspring.service.IBlocService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+@Tag(name="Gestion bloc")
 
 @RestController
 @AllArgsConstructor

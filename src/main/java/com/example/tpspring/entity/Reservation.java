@@ -15,8 +15,7 @@ import java.util.Set;
 @NoArgsConstructor
 public class Reservation {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idReservation;
+    private String idReservation;
 
     private Date anneeUniversitaire;
     private boolean estValide;
