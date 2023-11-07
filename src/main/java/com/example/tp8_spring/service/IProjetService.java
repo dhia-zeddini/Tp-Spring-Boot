@@ -13,4 +13,8 @@ public interface IProjetService {
     public Projet modifyProjet(Projet projet);
     public Projet addProjetAndProjetDetailAndAssign(Projet projet);
     public void assignProjetDetailToProjet(Long projetId,Long projetDetailId);
+    public Projet addProjetAndAssignProjetToProjetDetail(Projet projet, Long projetDetailId);
+    public Projet DesaffecterProjetDetailFromProjet(Long projetId);
+
+
 }

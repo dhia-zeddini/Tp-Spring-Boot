@@ -39,5 +39,14 @@ public class EquipeRestController {
     public Equipe modifyEquipe(@RequestBody Equipe b) {
         return equipeService.modifyEquipe(b);
     }
+    @PutMapping("/affecter-projet-equipe/{projet-id}/{equipe-id}")
+    public void affecgterProjetAProjetDetail(@PathVariable("projet-id") Long proejtId, @PathVariable("equipe-id") Long equipeId) {
+        equipeService.assignProjetToEquipe(proejtId,equipeId);
+    }
 
+    @PutMapping("/desaffecter-projet-de-equipe/{projet-id}/{equipe-id}")
+
+    public void desaffecterProjetFromEquipe(@PathVariable("projet-id") Long projetId, @PathVariable("equipe-id") Long equipeId) {
+       equipeService.desaffecterProjetFromEquipe(projetId,equipeId);
+    }
 }
