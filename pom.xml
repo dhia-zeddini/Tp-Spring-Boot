@@ -96,17 +96,17 @@
     </build>
     <distributionManagement>
         <repository>
-            <id>nexus-releases</id>
+            <id>maven-releases</id>
             <url>http://192.168.33.10:8081/repository/maven-releases/</url>
         </repository>
         <snapshotRepository>
-            <id>nexus-snapshots</id>
+            <id>maven-snapshots</id>
             <url>http://192.168.33.10:8081/repository/maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
     <repositories>
         <repository>
-            <id>nexus-releases</id>
+            <id>maven-releases</id>
             <url>http://192.168.33.10:8081/repository/maven-releases/</url> <!-- Optional: if you want to download from Nexus -->
         </repository>
     </repositories>
